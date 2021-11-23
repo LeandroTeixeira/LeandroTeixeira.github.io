@@ -11,7 +11,10 @@ const rgbToHex = (string) => {
     const hex = x.toString(16)
     return hex.length === 1 ? '0' + hex : hex
   }).join('')
-  if(!string || string.substring(0,3) !== "rgb") return '';
+
+  if(!string) return '';
+  if(string[0] === "#" && string.length === 7) return string;
+  if(string.substring(0,3) !== "rgb") return '';
 
   let str_aux = string.split("(")[1];
   str_aux = str_aux.split(")")[0];
@@ -50,6 +53,7 @@ function setSelected(source) {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
 function generateColors() {
   const prim = getRandomInt(172, 256);
   const sec = [getRandomInt(64, 172), getRandomInt(0, 128)];

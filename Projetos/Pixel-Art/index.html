@@ -8,56 +8,58 @@
 </head>
 <body>
    <div id = "title"><h1 >Pixel Art</h1> </div>
-     
-    <div id = "color-palette">
-        <input type="color" class = "color first"></input>
-        <input type="color" class = "color second"></input>
-        <input type="color" class = "color third"></input>
-        <input type="color" class = "color fourth"></input>
-        <label for = "current">Selected Color:</label>
-        <span id = "current" class = "current"></span>
+    <div class = "flex-container">
+        <div id = "color-palette">
+            <input type="color" class = "color first"></input>
+            <input type="color" class = "color second"></input>
+            <input type="color" class = "color third"></input>
+            <input type="color" class = "color fourth"></input>
+            <label for = "current">Selected Color:</label>
+            <span id = "current" class = "current"></span>
+        </div>
     </div>
-
-<div> 
+<div id = "button-container" class = "flex-container"> 
     <button id = "clear-board" class = "clear">Reset</button> 
     <input id = "board-size" class = "board-size" type = "number" min = "20" max = "60">
     <button id = "generate-board" class = "generate-board" >Set Board Size</button>
-</div>   
-<div id = "pixel-board">
-    <div class = "line">
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-    </div>
-    <div class = "line">
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-    </div>
-    <div class = "line">
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-    </div>
-    <div class = "line">
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-    </div>
-    <div class = "line">
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
-        <span class = "pixel"></span>
+</div>
+<div class = "flex-container">
+    <div id = "pixel-board">
+        <div class = "line">
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+        </div>
+        <div class = "line">
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+        </div>
+        <div class = "line">
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+        </div>
+        <div class = "line">
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+        </div>
+        <div class = "line">
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+            <span class = "pixel"></span>
+        </div>
     </div>
 </div>
 <script src="script.js"></script>
