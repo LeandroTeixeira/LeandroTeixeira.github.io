@@ -19,12 +19,12 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
   --background-color: white;
 
   --size : 40;
+  background-color: silver;
 }
 
 .color , .pixel , .current{
   height: var(--size);
   width: var(--size);
-  background-color: var(--background-color);
   display: inline-block;
 }
 
@@ -33,7 +33,7 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
   padding: 0;
   cursor: pointer;
   border: 0 none;
-
+  background-color: silver;
 }
 
 .color:focus{
@@ -51,6 +51,7 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 .current {
   background-color: var(--selected-color);
   margin-left : 20px;
+  border: 2px solid;
 }
 
 #pixel-board {
@@ -69,4 +70,9 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 
 #board-size {
   width:40px;
+}
+
+#title{
+  text-align: center;
+  background-color: dodgerblue ;
 }
