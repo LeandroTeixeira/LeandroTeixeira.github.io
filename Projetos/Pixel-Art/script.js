@@ -5,12 +5,14 @@ const input = document.getElementById('board-size');
 const button = document.getElementById('generate-board');
 const min_size = input.min;
 const max_size = input.max;
-
+;
 const rgbToHex = (string) => { 
   const convert = (r, g, b) => '#' + [r, g, b].map(x => {
     const hex = x.toString(16)
     return hex.length === 1 ? '0' + hex : hex
   }).join('')
+  if(!string || string.substring(0,3) !== "rgb") return '';
+
   let str_aux = string.split("(")[1];
   str_aux = str_aux.split(")")[0];
   const rgb = str_aux.split(",");
@@ -24,8 +26,8 @@ function setBGColor(source, color) {
 
 function paint(source) {
   const obj = source;
-  const selected = rootStyles.getPropertyValue('--selected-color').trim();
-  if (obj.target.style.backgroundColor !== selected) setBGColor(obj.target, selected);
+  const selected = rgbToHex (rootStyles.getPropertyValue('--selected-color').trim());
+  if (rgbToHex(obj.target.style.backgroundColor) !== selected) setBGColor(obj.target, selected);
   else setBGColor(obj.target, backgroundColor);
   return true;
 }
