@@ -30,22 +30,18 @@ function paint(source) {
   return true;
 }
 
-function setClickListeners(type, fun) {
-  const list = document.getElementsByClassName(type);
+function setListeners(target, fun, type) {
+  const list = document.getElementsByClassName(target);
   for (let i = 0; i < list.length; i += 1) {
-    list[i].addEventListener('click', fun);
+    list[i].addEventListener(type, fun);
   }
   return true;
 }
 
 function setSelected(source) {
   const element = source.target;
-  const selectedElement = document.getElementsByClassName('selected')[0];
-  if (element === selectedElement) return;
-  selectedElement.classList.toggle('selected');
-  const bgColor = getComputedStyle(element).getPropertyValue('background-Color');
+  const bgColor = element.value;
   root.style.setProperty('--selected-color', bgColor);
-  element.classList.toggle('selected');
   return true;
 }
 
@@ -93,11 +89,14 @@ function setValue(src) {
 }
 
 window.onload = (() => {
-  setClickListeners('pixel', paint);
-  setClickListeners('color', setSelected);
-  setClickListeners('clear', clearBoard);
-  setClickListeners('clear', generateBoard);
-  input.addEventListener('input', setValue);
+  setListeners('pixel', paint, 'click');
+ // setListeners('color', setSelected, 'click');
+  setListeners('color',setSelected,'input');
+  setListeners('clear', clearBoard, 'click');
+  setListeners('generate-board', generateBoard, 'click');
+  setListeners('board-size', setValue, 'input');
+
+  
   input.value = Number(rootStyles.getPropertyValue('--size'));
   generateColors();
   initializeColors();
