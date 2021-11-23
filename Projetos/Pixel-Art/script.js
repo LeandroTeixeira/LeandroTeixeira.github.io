@@ -90,7 +90,6 @@ function setValue(src) {
 
 window.onload = (() => {
   setListeners('pixel', paint, 'click');
- // setListeners('color', setSelected, 'click');
   setListeners('color',setSelected,'input');
   setListeners('clear', clearBoard, 'click');
   setListeners('generate-board', generateBoard, 'click');
