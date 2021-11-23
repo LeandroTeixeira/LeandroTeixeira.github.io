@@ -2,6 +2,10 @@ const root = document.querySelector(':root');
 const rootStyles = getComputedStyle(root);
 const backgroundColor = rootStyles.getPropertyValue('--background-color');
 const input = document.getElementById('board-size');
+const button = document.getElementById('generate-board');
+const min_size = input.min;
+const max_size = input.max;
+
 function setBGColor(source, color) {
   const obj = source;
   obj.style.setProperty('background-color', color);
@@ -41,6 +45,8 @@ function getRandomInt(min, max) {
 function generateColors() {
   const prim = getRandomInt(172, 256);
   const sec = [getRandomInt(64, 172), getRandomInt(0, 128)];
+  const tone = getRandomInt(0,202);
+  root.style.setProperty('--first-color', `rgb(${tone},${tone},${tone})`);
   let flag = Math.round(Math.random());
   root.style.setProperty('--second-color', `rgb(${prim},${sec[flag]},${sec[1 - flag]})`);
   flag = Math.round(Math.random());
@@ -57,28 +63,23 @@ function clearBoard() {
 
 function generateBoard() {
   const size = input.value;
-  clearBoard();
-  if (!size) {
-    alert('Board inválido!');
-    return false;
-  }
   root.style.setProperty('--size', size);
   return true;
 }
 
 function setValue(src) {
   const source = src.target;
-  if (source.value < 5) source.value = 5;
-  if (source.value > 50) source.value = 50;
+  if (source.value < min_size) source.value = min_size;
+  if (source.value > max_size) source.value = max_size;
 }
 
 window.onload = (() => {
   setClickListeners('pixel', paint);
   setClickListeners('color', setSelected);
   setClickListeners('clear', clearBoard);
-  const button = document.getElementById('generate-board');
-
-  button.addEventListener('click', generateBoard);
+  setClickListeners('clear', generateBoard);
   input.addEventListener('input', setValue);
+  input.value = Number(rootStyles.getPropertyValue('--size'));
   generateColors();
+
 })();
