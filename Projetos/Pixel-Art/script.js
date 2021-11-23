@@ -6,6 +6,16 @@ const button = document.getElementById('generate-board');
 const min_size = input.min;
 const max_size = input.max;
 
+const rgbToHex = (string) => { 
+  const convert = (r, g, b) => '#' + [r, g, b].map(x => {
+    const hex = x.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+  }).join('')
+  let str_aux = string.split("(")[1];
+  str_aux = str_aux.split(")")[0];
+  const rgb = str_aux.split(",");
+  return convert(Number(rgb[0]), Number(rgb[1]), Number(rgb[2]));
+}
 function setBGColor(source, color) {
   const obj = source;
   obj.style.setProperty('background-color', color);
@@ -56,6 +66,15 @@ function generateColors() {
   return true;
 }
 
+function initializeColors(){
+  const colors = document.getElementsByClassName("color");
+  colors[0].value = rgbToHex(rootStyles.getPropertyValue("--first-color"));
+  colors[1].value = rgbToHex(rootStyles.getPropertyValue("--second-color"));
+  colors[2].value = rgbToHex(rootStyles.getPropertyValue("--third-color"));
+  colors[3].value = rgbToHex(rootStyles.getPropertyValue("--fourth-color"));
+
+}
+
 function clearBoard() {
   const pixelList = document.getElementsByClassName('pixel');
   for (let i = 0; i < pixelList.length; i += 1) setBGColor(pixelList[i], backgroundColor);
@@ -81,5 +100,6 @@ window.onload = (() => {
   input.addEventListener('input', setValue);
   input.value = Number(rootStyles.getPropertyValue('--size'));
   generateColors();
+  initializeColors();
 
 })();

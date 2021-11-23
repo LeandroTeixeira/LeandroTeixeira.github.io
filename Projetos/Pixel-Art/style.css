@@ -20,36 +20,31 @@ https://www.w3schools.com/html/html_form_attributes.asp
   --size : 40;
 }
 
-.color , .pixel {
+.color , .pixel , .current{
   height: var(--size);
   width: var(--size);
-  border: solid 1px black;
+  background-color: var(--background-color);
   display: inline-block;
 }
 
 .color {
   margin-right: 3px;
+  padding: 0;
+  cursor: pointer;
+  border: 0 none;
+
+}
+
+.color:focus{
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 .pixel {
   margin : -2px;
+  border: solid 1px black;
   background-color: var(--background-color);
-}
-
-.first {
-  background-color: var(--first-color);
-}
-
-.second {
-  background-color: var(--second-color);
-}
-
-.third {
-  background-color: var(--third-color);
-}
-
-.fourth {
-  background-color: var(--fourth-color);
 }
 
 .current {
