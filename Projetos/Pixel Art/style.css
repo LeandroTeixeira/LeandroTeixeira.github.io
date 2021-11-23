@@ -1,0 +1,72 @@
+/*
+Referências: https://www.w3schools.com/css/css3_variables_javascript.asp
+https://www.w3schools.com/html/html_form_attributes.asp
+*/
+
+:root {
+
+  --first-color : black;
+
+  --second-color : blue;
+
+  --third-color: green;
+
+  --fourth-color: red;
+
+  --selected-color: var(--first-color);
+
+  --background-color: white;
+
+  --size : 40px;
+}
+
+.color , .pixel {
+  height: var(--size);
+  width: var(--size);
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.color {
+  margin-right: 3px;
+}
+
+.pixel {
+  margin : -2px;
+  background-color: var(--background-color);
+}
+
+.first {
+  background-color: var(--first-color);
+}
+
+.second {
+  background-color: var(--second-color);
+}
+
+.third {
+  background-color: var(--third-color);
+}
+
+.fourth {
+  background-color: var(--fourth-color);
+}
+
+.current {
+  background-color: var(--selected-color);
+  margin-left : 20px;
+}
+
+#pixel-board {
+  margin-left: 2px;
+}
+
+#color-palette {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#clear-board {
+  margin-bottom: 10px;
+  text-align: center;
+}
