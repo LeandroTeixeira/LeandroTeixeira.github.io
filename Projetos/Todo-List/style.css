@@ -1,0 +1,61 @@
+.selected {
+   background-color: rgb(128, 128, 128);
+}
+
+body {
+    background-color: aquamarine;
+}
+.lista {
+    background-color: aliceblue;
+    padding: 50px;
+    width: 50%;
+    border-radius: 25px;
+}
+
+button {
+    border-radius: 15px;
+    opacity: 0.75;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#criar-tarefa {
+    color: aliceblue;
+    background-color: blue;
+}
+
+#apaga-tudo{
+    color: aliceblue;
+    background-color: crimson;
+}
+
+#remover-selecionado {
+    background-color: brown;
+    color: aliceblue;
+}
+
+#remover-finalizados {
+    background-color: rgb(255, 251, 0);
+}
+
+#funcionamento {
+    font-style: italic;
+}
+
+#mover-cima, #mover-baixo {
+    font-size: 1.05em;
+    width: 40px;
+    background-color: green;
+    color: aliceblue;
+}
+
+.completed {
+    text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+#log {
+    margin-top: 40px;
+    font-style: italic;
+}
