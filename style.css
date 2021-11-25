@@ -1,3 +1,7 @@
+/*
+References: 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Kaushan+Script&display=swap');
 
 * {
@@ -77,22 +81,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     text-align: center;
 }
 
+.spacing {
+  margin : 40px;
+}
+
 article {
-  margin-top: 40px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;  /* Centering y-axis */
   align-items :center; /* Centering x-axis */
   border: 1px solid black;
+  border-radius: 25px;
   flex-direction: column;
+  padding-bottom: 25px;
+}
+
+#pixel-art {
+  background-color:#c0c0c0;
+    color:#000;
 
 }
- 
-h2 {
-  text-align: center;
-  font-size: 1.75em;
-  display: block;
-  margin-bottom: 10px;
 
+#todo-list {
+  background-color: #7fffd4;
+  color:#000;
+}
+
+.project-title {
+  font-size: 1.75em;
+  margin-bottom: 10px;
 }
 
 img {
@@ -100,11 +117,71 @@ img {
 
 .project-link {
   text-decoration: none;
-  color: #04AA6D;
+  color: #373F51;
 }
 
 
 .project-link:hover {
   text-decoration: underline;
-  color: #058657;
+  color: #000;
+}
+
+#nav-trigger {
+  cursor: pointer;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #222; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 120px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #04AA6D;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav {
+  top: 0;
+}
+.closebtn {
+top: 30px;
+  
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
