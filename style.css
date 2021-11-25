@@ -89,7 +89,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 article {
   padding-top: 20px;
-  display: inline-flex;
+  display: flex;
   align-items :center; /* Centering x-axis */
   border: 1px solid black;
   border-radius: 25px;
