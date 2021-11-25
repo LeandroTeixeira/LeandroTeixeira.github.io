@@ -9,6 +9,8 @@ References:
     --text-color1: rgb(241, 241, 241);
     --text-color2: #78b5ff;
     --title-font: Kaushan Script,sans-serif;
+    --img-height : 450px;
+    --img-width: 600px;
 }
 .header h3 {
     padding-bottom:1%;
@@ -86,14 +88,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 article {
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;  /* Centering y-axis */
+  padding-top: 20px;
+  display: inline-flex;
   align-items :center; /* Centering x-axis */
   border: 1px solid black;
   border-radius: 25px;
   flex-direction: column;
   padding-bottom: 25px;
+  width: 45%;
 }
 
 #pixel-art {
@@ -109,12 +111,22 @@ article {
 
 .project-title {
   font-size: 1.75em;
-  margin-bottom: 10px;
+  flex-grow: 1;
 }
 
+.description {
+    flex-grow: 1;
+
+}
+
+.todo-image{
+  margin-top: -50px;
+
+}
 img {
+  height: var(--img-height);
+  width: var(--img-width);
 }
-
 .project-link {
   text-decoration: none;
   color: #373F51;
@@ -174,10 +186,13 @@ top: 30px;
   
 }
 
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
+}
+
+.line {
+  display: flex;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
