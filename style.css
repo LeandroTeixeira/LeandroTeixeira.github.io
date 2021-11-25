@@ -79,20 +79,32 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 article {
   margin-top: 40px;
-  display: block;
+  display: flex;
+  justify-content: center;  /* Centering y-axis */
+  align-items :center; /* Centering x-axis */
   border: 1px solid black;
+  flex-direction: column;
+
 }
  
 h2 {
   text-align: center;
   font-size: 1.75em;
+  display: block;
+  margin-bottom: 10px;
+
 }
 
-a {
+img {
+}
+
+.project-link {
   text-decoration: none;
   color: #04AA6D;
 }
-a:hover{
+
+
+.project-link:hover {
   text-decoration: underline;
   color: #058657;
 }
