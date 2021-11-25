@@ -4,8 +4,8 @@ const backgroundColor = rootStyles.getPropertyValue('--background-color');
 const input = document.getElementById('board-size');
 const button = document.getElementById('generate-board');
 const boardContainer = document.getElementById('board-container');
-const min_size = input.min;
-const max_size = input.max;
+const min_size = Number(input.min);
+const max_size = Number(input.max);
 
 
 const rgbToHex = (string) => { 
@@ -102,8 +102,10 @@ function generateBoard() {
 
 function setValue(src) {
   const source = src.target;
-  if (source.value < min_size) source.value = min_size;
-  if (source.value > max_size) source.value = max_size;
+  const value = Number(source.value);
+  if (value < min_size) source.value = min_size;
+  if (value > max_size) source.value = max_size;
+  renderBoard(source.value);
 }
 
 function deleteBoard() {
@@ -141,7 +143,6 @@ window.onload = (() => {
   setListeners('board-size', setValue, 'input');
 
   
-  input.value = Number(rootStyles.getPropertyValue('--size'));
   generateColors();
   initializeColors();
 

@@ -18,7 +18,7 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 
   --background-color: white;
 
-  --size : 40;
+  --size : 39;
   background-color: silver;
 }
 
@@ -52,7 +52,7 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 
 .current {
   background-color: var(--selected-color);
-  margin-left : 20px;
+  margin-left : 5px;
   border: 2px solid;
 }
 
@@ -83,6 +83,11 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 .flex-container {
   display: flex;
   justify-content: center;
+  
+}
+
+#color-container{
+  margin-bottom: 20px;
 }
 
 #button-container {
@@ -92,4 +97,14 @@ https://pt.stackoverflow.com/questions/306843/como-criar-um-input-color-bacana
 
 #board-size {
   margin-right: 3px;
+}
+
+#set {
+  margin-top: 10px;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+#label1 {
+  margin-left: 20px;
 }
