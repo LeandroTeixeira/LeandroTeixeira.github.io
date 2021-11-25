@@ -138,6 +138,8 @@ function renderBoard(qtd) {
 window.onload = (() => {
   renderBoard(5);
   setListeners('color',setSelected,'input');
+  setListeners('color',setSelected,'click');
+
   setListeners('clear', clearBoard, 'click');
   setListeners('generate-board', generateBoard, 'click');
   setListeners('board-size', setValue, 'input');
