@@ -1,4 +1,9 @@
 .Title {
   font-size: 3em;
   color:aliceblue;
+  border: 2px solid white;
+  border-radius:15px;
+  margin-bottom:15px;
+  font-weight: bold;
+  opacity: 1;
 }
