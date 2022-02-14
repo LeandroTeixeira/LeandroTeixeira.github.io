@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 class MusicCard extends React.Component {
   render() {
     const { trackName, previewUrl, trackId, addSong, removeSong, check } = this.props;
-    console.log(check);
     return (
       <div>
         {' '}
