@@ -1,5 +1,16 @@
 const Projetos = [
   {
+    "id" : "496e7465727669657720416c676f726974686d73",
+    "nome": "Interview Algorithms",
+    "picture":"https://github.com/LeandroTeixeira/Interview-Algorithms/raw/main/Container%20With%20Most%20Water/two-pointer.png",
+    "link":"",
+    "repositoryLink":"https://github.com/LeandroTeixeira/Interview-Algorithms",
+    "descricao":`A repository with my solutions to different algorithm problems found around the internet. The idea is to sharp my skills for potential interviews in the future.
+    Each folder deals with a specific problem. It will contain the source of the problem (when aplicable), a description of the problem and one or more solutions with their respective general descriptions, implementations, analysis of space and time complexity and an example of how the code performed when submitted at LeetCode.`,
+    "languages":["Python"],
+    "tecnologies":["Brute Force algorithms", "Divide-and-Conquer algorithms", "Two Pointer technique", "recursive algorithms", "Array Traversal problems"],
+  },
+  {
     "id" : "54756e6573",
     "nome": "Tunes",
     "picture":"",
@@ -42,22 +53,22 @@ const Projetos = [
   {
     "id" : "506978656c20417274",
     "nome": "Pixel Art",
-    "picture":"../Projetos/Pixel-Art/print.png",
-    "link":"",
-    "repositoryLink":"",
-    "descricao":"",    
+    "picture":"https://github.com/LeandroTeixeira/Pixel-Art/raw/main/print.png",
+    "link":"https://leandroteixeira.github.io/Pixel-Art/",
+    "repositoryLink":"https://github.com/LeandroTeixeira/Pixel-Art",
+    "descricao":"Projeto de pixel art desenvolvido durante o módulo de Fundamentos do curso da Trybe. Trata-se de um projeto feito com HTML, CSS e JavaScript para a criação de pixel art. As cores são geradas de forma pseudo-aleatória sempre que a página é recarregada. São 4 tons, um na escala de preto e cinza, um tom de vermelho, um de verde e um de azul. As cores também podem ser modificadas durante o uso se o usuário assim desejar.",    
     "languages":["HTML", "CSS", "JavaScript"],
-    "tecnologies":[],
+    "tecnologies":["Manipulação de DOM", "Geração de valores aleatórios"],
   },
   {
     "id" : "53686f7070696e672043617274",
     "nome": "Shopping Cart",
-    "picture":"",
-    "link":"",
-    "repositoryLink":"",
-    "descricao":"",   
+    "picture":"https://github.com/LeandroTeixeira/Shopping-Cart/raw/main/Image.png",
+    "link":"https://leandroteixeira.github.io/Shopping-Cart/",
+    "repositoryLink":"https://github.com/LeandroTeixeira/Shopping-Cart",
+    "descricao":"Projeto que simula um carrinho de compras. Os elementos apresentados são obtidos através da API do MercadoLivre. Para esta aplicação também foram desenvolvidos uma série de testes em Jest para avaliar a qualidade do código. Os testes estão disponíveis na pasta 'testes' e foram desenvolvidos de modo a terem a maior cobertura possível do código.",   
     "languages":["HTML", "CSS", "JavaScript"],
-    "tecnologies":[],
+    "tecnologies":["JS assíncrono", "Requisições a API","Testes com Jest"],
   }, 
   {
     "id" : "53697374656d6120536f6c6172",
@@ -96,17 +107,7 @@ O objetivo do software era, acima de tudo, desenvolver uma ferramenta de acessib
     "Manipulação de áudio usando o pacote javax.sound"
   ],
   },
-  {
-    "id" : "496e7465727669657720416c676f726974686d73",
-    "nome": "Interview Algorithms",
-    "picture":"https://github.com/LeandroTeixeira/Interview-Algorithms/raw/main/Container%20With%20Most%20Water/two-pointer.png",
-    "link":"",
-    "repositoryLink":"https://github.com/LeandroTeixeira/Interview-Algorithms",
-    "descricao":`A repository with my solutions to different algorithm problems found around the internet. The idea is to sharp my skills for potential interviews in the future.
-    Each folder deals with a specific problem. It will contain the source of the problem (when aplicable), a description of the problem and one or more solutions with their respective general descriptions, implementations, analysis of space and time complexity and an example of how the code performed when submitted at LeetCode.`,
-    "languages":["Python"],
-    "tecnologies":[],
-  }
+  
 ];
 
 export default Projetos;
