@@ -1,0 +1,11 @@
+@import url('../../App.css');
+
+.projects {
+    --spacing:1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: calc(var(--spacing)*2);
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+
+}

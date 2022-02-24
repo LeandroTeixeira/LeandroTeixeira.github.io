@@ -1,0 +1,76 @@
+const Projetos = [
+  {
+    "id" : "54756e6573",
+    "nome": "Tunes",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "5472756e666f",
+    "nome": "Trunfo",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "4f6e6c696e652053746f7265",
+    "nome": "Online Store",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "506f6b65646578",
+    "nome": "Pokedex",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "506978656c20417274",
+    "nome": "Pixel Art",
+    "picture":"../Projetos/Pixel-Art/print.png",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "53686f7070696e672043617274",
+    "nome": "Shopping Cart",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  }, 
+  {
+    "id" : "53697374656d6120536f6c6172",
+    "nome": "Sistema Solar",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "53697374656d6120536f6c6172",
+    "nome": "Todo List",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"",
+    "descricao":"",
+  },
+  {
+    "id" : "4c6972616373",
+    "nome": "Liracs",
+    "picture":"",
+    "link":"",
+    "repositoryLink":"https://github.com/LeandroTeixeira/Liracs",
+    "descricao":"",
+  }
+];
+
+export default Projetos;
