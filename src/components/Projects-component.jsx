@@ -5,6 +5,7 @@ import Projetos from '../Util/Project-List';
 
 class Projects extends React.Component{
   render() {
+    const {texts} = this.props;
     return(<div className='projects'>
       {Projetos.map((e) => <ProjectCard 
               key={e.id}  
@@ -17,7 +18,8 @@ class Projects extends React.Component{
                languages={e.languages}
                technologies={e.tecnologies}
                bgColor={e.BGColor}
-               color={e.Color}/>)}
+               color={e.Color}
+               texts={texts}/>)}
       </div>);
   }
 }

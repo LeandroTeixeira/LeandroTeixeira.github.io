@@ -13,6 +13,25 @@ const Projetos = [
     "Color":"Black",
   },
   {
+    "id" : "4c6972616373",
+    "nome": "Liracs",
+    "picture":"https://github.com/LeandroTeixeira/Liracs/raw/main/Image.png",
+    "link":"",
+"repositoryLink":"https://github.com/LeandroTeixeira/Liracs",
+    "descricao":`Repositório referente ao software desenvolvido em grupo como TCC para o curso de Informática na instituição CEFET-MG no ano de 2015. Trata-se de um software desenvolvido em Java para executar instruções no computador a partir de comandos de voz.
+O objetivo do software era, acima de tudo, desenvolver uma ferramenta de acessibilidade para pessoas com mobilidade reduzida que poderiam ter dificuldade de usar o computador.`,
+  "languages":["Java", "PostgreSQL"],
+  "tecnologies":[
+    "Bancos de dados implementados em Postgres",
+    "Conceitos de MVC, incluindo mas não se limitando a Stubs, Skeletons e DAOs",
+    "Interface gráfica desenvolvida com as ferramentas nativas de Java",
+    "Gerenciamento de usuários via banco de dados",
+    "Manipulação de áudio usando o pacote javax.sound"
+  ],
+  "BGColor":"rgb(85, 201, 201)",
+  "Color":"Black",
+  },
+  {
     "id" : "54756e6573",
     "nome": "Tunes",
     "picture":"",
@@ -79,7 +98,7 @@ const Projetos = [
     "link":"https://leandroteixeira.github.io/Shopping-Cart/",
     "repositoryLink":"https://github.com/LeandroTeixeira/Shopping-Cart",
     "descricao":"Projeto que simula um carrinho de compras. Os elementos apresentados são obtidos através da API do MercadoLivre. Para esta aplicação também foram desenvolvidos uma série de testes em Jest para avaliar a qualidade do código. Os testes estão disponíveis na pasta 'testes' e foram desenvolvidos de modo a terem a maior cobertura possível do código.",   
-    "languages":["HTML", "CSS", "JavaScript"],
+    "languages":["HTML", "CSS", "JavaScript", "Jest"],
     "tecnologies":["JS assíncrono", "Requisições a API","Testes com Jest"],
     "BGColor":"rgb(226, 226, 226)",
     "Color":"Black",
@@ -98,25 +117,7 @@ const Projetos = [
     "BGColor":"#444",
     "Color":"White",
   },
-  {
-    "id" : "4c6972616373",
-    "nome": "Liracs",
-    "picture":"https://github.com/LeandroTeixeira/Liracs/raw/main/Image.png",
-    "link":"",
-"repositoryLink":"https://github.com/LeandroTeixeira/Liracs",
-    "descricao":`Repositório referente ao software desenvolvido em grupo como TCC para o curso de Informática na instituição CEFET-MG no ano de 2015. Trata-se de um software desenvolvido em Java para executar instruções no computador a partir de comandos de voz.
-O objetivo do software era, acima de tudo, desenvolver uma ferramenta de acessibilidade para pessoas com mobilidade reduzida que poderiam ter dificuldade de usar o computador.`,
-  "languages":["Java"],
-  "tecnologies":[
-    "Bancos de dados implementados em Postgres",
-    "Conceitos de MVC, incluindo mas não se limitando a Stubs, Skeletons e DAOs",
-    "Interface gráfica desenvolvida com as ferramentas nativas de Java",
-    "Gerenciamento de usuários via banco de dados",
-    "Manipulação de áudio usando o pacote javax.sound"
-  ],
-  "BGColor":"rgb(85, 201, 201)",
-  "Color":"Black",
-  },
+  
   
 ];
 

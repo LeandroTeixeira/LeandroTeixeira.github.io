@@ -8,7 +8,7 @@ import Header from './components/Header-component';
 import './App.css';
 import Footer from './components/Footer.component';
 import {readLanguage, setLanguage} from './Util/Persistence';
-import {headerEN, headerPT} from './Util/DefaultText';
+import {headerEN, headerPT, ProjectCardEN, ProjectCardPT} from './Util/DefaultText';
 
 class App extends React.Component {
   constructor() {
@@ -32,12 +32,21 @@ class App extends React.Component {
     <div className="App">
       <header className="App-header">
       <BrowserRouter>
-        <Header texts={language === "EN"?headerEN:headerPT}
-        update={this.updateLanguage}
-        language={language}/>
+        <Header 
+          texts={language === "EN"?headerEN:headerPT}
+          update={this.updateLanguage}
+          language={language}
+        />
         <Switch>
           <Route path='/about'>{<About language={language}/>}</Route>
-          <Route path='/projects'>{<Projects language={language}/>}</Route>
+          <Route path='/projects'>
+            {
+              <Projects 
+                language={language}
+                texts={language === "EN"?ProjectCardEN:ProjectCardPT}
+              />
+              }
+          </Route>
           <Route path='/contact'>{<Contact language={language}/>}</Route>
           <Route path='/home'>{<Home language={language}/>}</Route>
           <Route exact path='/'><Redirect to='/home' /></Route>

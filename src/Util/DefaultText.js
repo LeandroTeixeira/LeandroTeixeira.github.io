@@ -18,4 +18,18 @@ export const headerEN = {
   "project":"Projects",
   "projectList": "Project List",
   "contact": "Contact",
+};
+
+export const ProjectCardPT = {
+  "link": "Clique para Acessar o Repositório",
+  "desc": "Descrição do Projeto",
+  "lang": "Tecnologias Utilizadas:",
+  "tech": "Este projeto possui:",
+}
+
+export const ProjectCardEN = {
+  "link": "Click to Access Repository",
+  "desc": "Description",
+  "lang": "Techonologies Used:",
+  "tech": "This project has:",
 }
