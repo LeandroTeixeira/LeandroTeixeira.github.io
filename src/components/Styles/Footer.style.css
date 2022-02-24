@@ -1,0 +1,13 @@
+@import url('../../App.css');
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:var(--footer-size);
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}

@@ -7,5 +7,5 @@
     grid-column-gap: calc(var(--spacing)*2);
     margin-left: var(--spacing);
     margin-right: var(--spacing);
-
+    margin-bottom: calc(var(--footer-size)*1.25);
 }

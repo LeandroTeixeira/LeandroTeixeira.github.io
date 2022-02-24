@@ -68,7 +68,7 @@ article section div {
   margin-left: 10%;
 }
 
-.divisor div ul li {  
+ul li {  
     float: left;
     display:inline;
     margin-left:10px;
@@ -77,8 +77,8 @@ article section div {
 
 
 img {
-  height: var(--img-height);
-  width: var(--img-width);
+  max-height: var(--img-height);
+  max-width: var(--img-width);
   border:1px solid black;
   margin-top: 1%;
 }
@@ -166,4 +166,8 @@ top: 30px;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.description {
+  text-align:justify;
 }
