@@ -5,8 +5,11 @@ import './Styles/Project.style.css';
 
 class ProjectCard extends React.Component{
   render() {
-    const {id, name, picture, link, repLink, description, languages, technologies} = this.props;
-    return(<div className="project" id={id}><article id = "Pixel-Art">
+   //  const style= //style={{"background-color": "white", "color": "black"}};
+    const {id, name, picture, link, repLink, description, languages, technologies, bgColor, color} = this.props;
+    return(
+
+    <div className="project" style={{"backgroundColor": bgColor, "color": color}} id={id} ><article>
     <h2><a href = {link ? link : repLink}>{name}</a></h2>
     <p><a href = {repLink}>Click to Access Repository</a></p>
     <header>
@@ -19,20 +22,22 @@ class ProjectCard extends React.Component{
     {description? description: defaultText}
     </div>
   </div>
-  <div class = "divisor">
+  <div className = "divisor">
   
-  <div>
-  <h3> Languages / Frameworks used:</h3>
-  <ul>
-    {languages.map((e) => <li>&bull; {e}</li>)}
-  </ul>
-  </div>
-  <span>  <h3>Used technologies:</h3>
+    <div>
+    <h3> Languages / Frameworks used:</h3>
     <ul>
-       {technologies.map((e) => <li>&bull; {e}</li>)}
-    </ul></span>
-  
-  </div>
+      {languages.map((e) => <li key={e}>{e}</li>)}
+    </ul>
+    </div>
+    <span>  
+    <h3>Used technologies:</h3>
+      <ul>
+        {technologies.map((e) => <li key={e}>{e}</li>)}
+      </ul>
+      </span>
+    
+    </div>
   </section>
   </article>
   </div>);

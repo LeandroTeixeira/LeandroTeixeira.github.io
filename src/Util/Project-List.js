@@ -9,6 +9,8 @@ const Projetos = [
     Each folder deals with a specific problem. It will contain the source of the problem (when aplicable), a description of the problem and one or more solutions with their respective general descriptions, implementations, analysis of space and time complexity and an example of how the code performed when submitted at LeetCode.`,
     "languages":["Python"],
     "tecnologies":["Brute Force algorithms", "Divide-and-Conquer algorithms", "Two Pointer technique", "recursive algorithms", "Array Traversal problems"],
+    "BGColor":"rgb(245, 245, 245)",
+    "Color":"Black",
   },
   {
     "id" : "54756e6573",
@@ -19,6 +21,8 @@ const Projetos = [
     "descricao":"",   
     "languages":["React","HTML", "CSS", "JavaScript"],
     "tecnologies":[],
+    "BGColor":"#c0c0c0",
+    "Color":"White",
   },
   {
     "id" : "5472756e666f",
@@ -29,6 +33,8 @@ const Projetos = [
     "descricao":"",    
     "languages":["React","HTML", "CSS", "JavaScript"],
     "tecnologies":[],
+    "BGColor":"#c0c0c0",
+    "Color":"White",
   },
   {
     "id" : "4f6e6c696e652053746f7265",
@@ -39,6 +45,8 @@ const Projetos = [
     "descricao":"",
     "languages":["React","HTML", "CSS", "JavaScript"],
     "tecnologies":[],
+    "BGColor":"#c0c0c0",
+    "Color":"White",
   },
   {
     "id" : "506f6b65646578",
@@ -49,6 +57,8 @@ const Projetos = [
     "descricao":"",    
     "languages":["React","HTML", "CSS", "JavaScript"],
     "tecnologies":[],
+    "BGColor":"#c0c0c0",
+    "Color":"White",
   },
   {
     "id" : "506978656c20417274",
@@ -59,6 +69,8 @@ const Projetos = [
     "descricao":"Projeto de pixel art desenvolvido durante o módulo de Fundamentos do curso da Trybe. Trata-se de um projeto feito com HTML, CSS e JavaScript para a criação de pixel art. As cores são geradas de forma pseudo-aleatória sempre que a página é recarregada. São 4 tons, um na escala de preto e cinza, um tom de vermelho, um de verde e um de azul. As cores também podem ser modificadas durante o uso se o usuário assim desejar.",    
     "languages":["HTML", "CSS", "JavaScript"],
     "tecnologies":["Manipulação de DOM", "Geração de valores aleatórios"],
+    "BGColor":"#c0c0c0",
+    "Color":"White",
   },
   {
     "id" : "53686f7070696e672043617274",
@@ -69,6 +81,8 @@ const Projetos = [
     "descricao":"Projeto que simula um carrinho de compras. Os elementos apresentados são obtidos através da API do MercadoLivre. Para esta aplicação também foram desenvolvidos uma série de testes em Jest para avaliar a qualidade do código. Os testes estão disponíveis na pasta 'testes' e foram desenvolvidos de modo a terem a maior cobertura possível do código.",   
     "languages":["HTML", "CSS", "JavaScript"],
     "tecnologies":["JS assíncrono", "Requisições a API","Testes com Jest"],
+    "BGColor":"rgb(226, 226, 226)",
+    "Color":"Black",
   }, 
   {
     "id" : "53697374656d6120536f6c6172",
@@ -76,19 +90,13 @@ const Projetos = [
      "picture":"https://github.com/LeandroTeixeira/Sistema-Solar/raw/main/Image.png",
     "link":"https://leandroteixeira.github.io/Sistema-Solar/",
     "repositoryLink":"https://github.com/LeandroTeixeira/Sistema-Solar",
-    "descricao":"",   
+    "descricao":"Trata-se de um projeto pequeno visando usar habilidades recém-adquiridas em React para exibir a lista dos planetas e suas missões espaciais.",   
     "languages":["React","HTML", "CSS", "JavaScript"],
-    "tecnologies":[],
-  },
-  {
-    "id" : "546f646f204c697374",
-    "nome": "Todo List",
-    "picture":"",
-    "link":"",
-    "repositoryLink":"",
-    "descricao":"",  
-    "languages":["HTML", "CSS", "JavaScript"],
-  "tecnologies":[],
+    "tecnologies":["Uso de Props",
+      "Criação e Desenvolvimento de Componentes em React",
+"Uso de PropTypes para validação das props"],
+    "BGColor":"#444",
+    "Color":"White",
   },
   {
     "id" : "4c6972616373",
@@ -106,6 +114,8 @@ O objetivo do software era, acima de tudo, desenvolver uma ferramenta de acessib
     "Gerenciamento de usuários via banco de dados",
     "Manipulação de áudio usando o pacote javax.sound"
   ],
+  "BGColor":"rgb(85, 201, 201)",
+  "Color":"Black",
   },
   
 ];

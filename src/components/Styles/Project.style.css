@@ -9,7 +9,8 @@
   margin-bottom:1em;
   width: 100%;
   box-shadow: 1px 5px 15px 15px black;
-  background-color:#c0c0c0;
+  background-color:hsl(0, 0%, 27%);
+  color: black;
 }
 
 
@@ -49,29 +50,28 @@ article section div {
   border-top: solid 1px #000;
   padding-top: 50px;
   margin-top: 50px;
-  display: flex; 
-  justify-content: space-around;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  width:100%;
   margin-bottom: 0;
 }
 
-.divisor div ul {
-  margin-top: 10px;
+ul {
+  margin-top: 20px;
 }
 
 .divisor div {
-  width: 40%;
   margin-left:10%;
 }
 
 .divisor span {
-  width: 40%;
-  margin-left: 10%;
+  margin-right: 10%;
 }
 
-ul li {  
-    float: left;
-    display:inline;
+ul li { 
+    margin-top:2%;
     margin-left:10px;
+    text-align: justify;
 }
 
 
@@ -170,4 +170,8 @@ top: 30px;
 
 .description {
   text-align:justify;
+  margin-left:3%;
+  margin-right:3%;
+  margin-top:1%;
+
 }

@@ -15,7 +15,9 @@ class Projects extends React.Component{
                repLink={e.repositoryLink} 
                description={e.descricao}
                languages={e.languages}
-               technologies={e.tecnologies} />)}
+               technologies={e.tecnologies}
+               bgColor={e.BGColor}
+               color={e.Color}/>)}
       </div>);
   }
 }

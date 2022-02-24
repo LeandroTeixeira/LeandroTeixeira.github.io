@@ -28,7 +28,7 @@ class Header extends React.Component{
         activeClassName= {`nav-item project-formatter-${language} dropdown active`} >
           <span>{texts.project}</span>
           <div className="dropdown-content">
-            {Projetos.map((e) => <Link to={`/projects#${e.id}`}>{e.nome}</Link> )}
+            {Projetos.map((e) => <Link to={`/projects#${e.id}`} key={e.id}>{e.nome}</Link> )}
           </div>
            
           </NavLink>
